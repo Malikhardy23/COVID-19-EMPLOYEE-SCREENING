@@ -6,15 +6,14 @@ const employeeCode = document.getElementById("employeeCode");
 const departmemtOption = document.getElementById("departmentOption");
 const questionsContainer = document.getElementById("questionsContainer");
 const questions = document.getElementsByClassName('question')
-const buttons = document.getElementsByTagName('button');
-const yesBtn = document.getElementsByClassName('yesBtn');
-const noBtn = document.getElementsByClassName('noBtn');
+// const yesBtn = document.getElementsByClassName('yesBtn');
+// const noBtn = document.getElementsByClassName('noBtn');
+const btnContainer = document.getElementById("buttonContainer");
+const btn = document.getElementsByTagName('button');
 
 console.log(questions);
-console.log(buttons);
 console.log(questionsContainer);
-console.log(yesBtn);
-console.log(noBtn);
+console.log(btn);
 
 
 // FULL NAME FUNCTION //
@@ -48,18 +47,23 @@ console.log(noBtn);
 
     // EMPLOYEE QUESTIONS EVENT LISTENERS //
 
-    questionsContainer.addEventListener('click', (e) => {
-        if(e.target){
-            if(e.target.textContent === 'NO'){
-                e.target.style.color = "red";
-                e.target.style.backgroundColor = "blue";
-            }
-            else if(e.target.textContent === "YES"){
-                e.target.style.color = "red";
-                e.target.style.backgroundColor = "tan";
-            }
+    /* questionsContainer.addEventListener('click', (e) => {
+        if(btn){
+            btn.style.backgroundColor = "yellow";
         }
-    }) 
+            else {
+            btn.style.backgroundColor = "red";
+        }
+    
+    }) */
 
+
+    for (var i = 0; i < btn.length; i++) {
+        btn[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+        });
+      }
 
 

@@ -139,6 +139,11 @@
     color: #fff;
 }
 
+#questionsContainer .question .active{
+    background-color: #000;
+    color: #fff;
+}
+
 
 #questionsContainer .question h3{
     margin: 10px;

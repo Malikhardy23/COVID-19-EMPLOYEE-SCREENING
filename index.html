@@ -10,20 +10,28 @@
     <div id="container">
         <div class="banner">
             <h1>COVID-19 EMPLOYEE SCREENING</h1>
+            <div id="feedbackMessage"></div>
         </div>
         <div id="employeeInfoContainer">
-            <label for="name">Full Name</label><input type="text">
-            <label for="employeeCode">Employee Code</label><input type="text">
-            <h3>Choose Your Department:</h3>
-            <select id="departmentOption">
-                <option value="admin">administration</option>
-                <option value="comm">communications</option>
-                <option value="sales">sales</option>
-                <option value="frontDesk">front desk</option>
-            </select>
+            <div class="nameContainer">
+                <label for="name">Full Name</label><input type="text" id="employeeName" placeholder="Please Enter Full Name">
+            </div>
+            <div class="employeeCodeContainer">
+                <label for="employeeCode">Employee Code</label><input type="text" id="employeeCode" placeholder="Employee #">
+            </div>
+            <div class="departmentOptionContainer">
+                <h3>Choose Your Department</h3>
+                <select id="departmentOption">
+                    <option value="admin">administration</option>
+                    <option value="comm">communications</option>
+                    <option value="sales">sales</option>
+                    <option value="frontDesk">front desk</option>
+                </select>
+            </div>
         </div>
         <div id="questionsContainer">
             <div class="question question1">
+                <h1>PLEASE READ EACH QUESTION CAREFULLY</h1>
                 <h3>Have you experienced any of the following symptoms in the past 48 hours:</h3>
                     <li>fever or chills</li>
                     <li>cough</li>
@@ -36,9 +44,9 @@
                     <li>congestion or runny nose</li>
                     <li>nausea or vomiting</li>
                     <li>diarrhea</li>
-                <div class="buttonContainer">
-                    <button id="yesBtn">YES</button>
-                    <button id="noBtn">NO</button>
+                <div id="buttonContainer">
+                    <button class="yesBtn active">YES</button>
+                    <button class="noBtn">NO</button>
                 </div>
             </div>
             <div class="question question2">
@@ -48,25 +56,28 @@
                         <li>Anyone who is known to have laboratory-confirmed COVID-19?</li>
                         <li>Anyone who has any symptoms consistent with COVID-19?</li>
                     </ul>
-                <div class="buttonContainer">
-                    <button id="yesBtn">YES</button>
-                    <button id="noBtn">NO</button>
+                <div id="buttonContainer">
+                    <button class="yesBtn">YES</button>
+                    <button class="noBtn">NO</button>
                 </div>
             </div>
             <div class="question question3">
                 <h3>Are you isolating or quarantining because you may have been exposed to a person with
                     COVID-19 or are worried that you may be sick with COVID-19?</h3>
-                <div class="buttonContainer">
-                    <button id="yesBtn">YES</button>
-                    <button id="noBtn">NO</button>
+                <div id="buttonContainer">
+                    <button class="yesBtn">YES</button>
+                    <button class="noBtn">NO</button>
                 </div>
             </div>
             <div class="question question4">
                 <h3>Are you currently waiting on the results of a COVID-19 test?</h3>
-                <div class="buttonContainer">
-                    <button id="yesBtn">YES</button>
-                    <button id="noBtn">NO</button>
+                <div id="buttonContainer">
+                    <button class="yesBtn">YES</button>
+                    <button class="noBtn">NO</button>
                 </div>
+            </div>
+            <div id="submitBtnContainer">
+                <button id="submitBtn">Submit</button>
             </div>
         </div>
     </div>
