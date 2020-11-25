@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    <title>COVID-19 SCREENING</title>
+</head>
+<body>
+    <div id="container">
+        <div class="banner">
+            <h1>COVID-19 EMPLOYEE SCREENING</h1>
+        </div>
+        <div id="employeeInfoContainer">
+            <label for="name">Full Name</label><input type="text">
+            <label for="employeeCode">Employee Code</label><input type="text">
+            <h3>Choose Your Department:</h3>
+            <select id="departmentOption">
+                <option value="admin">administration</option>
+                <option value="comm">communications</option>
+                <option value="sales">sales</option>
+                <option value="frontDesk">front desk</option>
+            </select>
+        </div>
+        <div id="questionsContainer">
+            <div class="question question1">
+                <h3>Have you experienced any of the following symptoms in the past 48 hours:</h3>
+                    <li>fever or chills</li>
+                    <li>cough</li>
+                    <li>shortness of breath or difficulty breathing</li>
+                    <li>fatigue</li>
+                    <li>muscle or body aches</li>
+                    <li>headache</li>
+                    <li>new loss of taste or smell</li>
+                    <li>sore throat</li>
+                    <li>congestion or runny nose</li>
+                    <li>nausea or vomiting</li>
+                    <li>diarrhea</li>
+                <div class="buttonContainer">
+                    <button id="yesBtn">YES</button>
+                    <button id="noBtn">NO</button>
+                </div>
+            </div>
+            <div class="question question2">
+                <h3>Within the past 14 days, have you been in close physical contact  (6 feet or closer for a
+                    cumulative total of 15 minutes) with:</h3>
+                    <ul>
+                        <li>Anyone who is known to have laboratory-confirmed COVID-19?</li>
+                        <li>Anyone who has any symptoms consistent with COVID-19?</li>
+                    </ul>
+                <div class="buttonContainer">
+                    <button id="yesBtn">YES</button>
+                    <button id="noBtn">NO</button>
+                </div>
+            </div>
+            <div class="question question3">
+                <h3>Are you isolating or quarantining because you may have been exposed to a person with
+                    COVID-19 or are worried that you may be sick with COVID-19?</h3>
+                <div class="buttonContainer">
+                    <button id="yesBtn">YES</button>
+                    <button id="noBtn">NO</button>
+                </div>
+            </div>
+            <div class="question question4">
+                <h3>Are you currently waiting on the results of a COVID-19 test?</h3>
+                <div class="buttonContainer">
+                    <button id="yesBtn">YES</button>
+                    <button id="noBtn">NO</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
