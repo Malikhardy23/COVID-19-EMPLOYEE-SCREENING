@@ -1,0 +1,198 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* CONTAINER SECTION */
+
+#container{
+    display: flex;
+    flex-direction: column;
+    width: 105rem;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#container .banner{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(95, 201, 243);
+}
+
+#container .banner h1{
+    padding: 10px;
+    cursor: pointer;
+}
+
+#container button{
+    margin: 10px;
+    cursor: pointer;
+    border-color: 2px solid black;
+}
+
+/* END OF CONTAINER SECTION */
+
+/**************************************************************/
+
+/* EMPLOYEE INFO SECTION */
+
+
+#employeeInfoContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px;
+    font-size: 20px;
+}
+
+#employeeInfoContainer label{
+    margin: 10px;
+    font-size: 30px;
+}
+
+#employeeInfoContainer label ::placeholder{
+    margin: 10px;
+    font-size: 25px;
+}
+
+#employeeInfoContainer .nameContainer{
+    margin: 20px;
+}
+
+#employeeInfoContainer .employeeCodeContainer{
+    margin: 20px;
+}
+
+#employeeInfoContainer .departmentOptionContainer{
+    display: flex;
+    margin: 20px;
+    text-align: center;
+}
+
+#employeeInfoContainer .departmentOptionContainer select{
+    font-size: 20px;
+}
+
+#employeeInfoContainer .departmentOptionContainer h3{
+    padding-right: 10px;
+}
+
+#employeeInfoContainer .nameContainer input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: black;
+    font-size: 23px;
+    text-align: center;
+}
+
+#employeeInfoContainer .employeeCodeContainer input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: black;
+    font-size: 23px;
+    text-align: center;
+}
+
+/* END OF EMPLOYEE INFO SECTION */
+
+/**************************************************************/
+
+/**************************************************************/
+
+/* QUESTION SECTION */
+
+
+#questionsContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 25px 350px;
+    font-size: 20px;
+}
+
+#questionsContainer h1{
+    text-align: left;
+    margin: 25px 10px;
+}
+
+#questionsContainer .question{
+    text-align: left;
+    margin: 25px;
+}
+
+#questionsContainer .question button{
+    text-align: left;
+    margin: 15px;
+    padding: 5px 15px;
+    font-size: 15px;
+    border: 1px solid black;
+    transition: all .4s ease-in-out;
+}
+
+#questionsContainer .question button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+
+#questionsContainer .question h3{
+    margin: 10px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+#questionsContainer .question ul{
+    margin: 5px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+#questionsContainer .question li{
+    margin: 10px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+#questionsContainer #submitBtnContainer{
+    text-align: center;
+    padding: 50px;
+}
+
+#questionsContainer #submitBtnContainer button{
+    padding: 10px 15px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    transition: all .4s ease-in-out;
+}
+
+#questionsContainer #submitBtnContainer button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* END OF EMPLOYEE INFO SECTION */
+
+/**************************************************************/
+
+/*** CSS MEDIA QUERIES ***/
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px){
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px){
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px){
+
+}
