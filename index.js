@@ -6,14 +6,18 @@ const employeeCode = document.getElementById("employeeCode");
 const departmemtOption = document.getElementById("departmentOption");
 const questionsContainer = document.getElementById("questionsContainer");
 const questions = document.getElementsByClassName('question')
-// const yesBtn = document.getElementsByClassName('yesBtn');
-// const noBtn = document.getElementsByClassName('noBtn');
+let yesBtn = document.getElementById("yesBtn");
+let noBtn = document.getElementById("noBtn");
 const btnContainer = document.getElementById("buttonContainer");
-const btn = document.getElementsByTagName('button');
+const btn = document.querySelectorAll('button');
 
 console.log(questions);
 console.log(questionsContainer);
+console.log(yesBtn.value);
+console.log(noBtn.value);
 console.log(btn);
+
+
 
 
 // FULL NAME FUNCTION //
@@ -47,23 +51,25 @@ console.log(btn);
 
     // EMPLOYEE QUESTIONS EVENT LISTENERS //
 
-    /* questionsContainer.addEventListener('click', (e) => {
-        if(btn){
-            btn.style.backgroundColor = "yellow";
-        }
-            else {
-            btn.style.backgroundColor = "red";
-        }
-    
-    }) */
 
 
-    for (var i = 0; i < btn.length; i++) {
+    questionsContainer.addEventListener('click', (e) => {
+        for(let i = 0; i < btn.length; i++){
+
+            if(e.target === yesBtn){
+                yesBtn.style.backgroundColor = "yellow";
+            } else {
+                noBtn.style.backgroundColor = "red";
+            } 
+        }
+    }) 
+
+    /* for (var i = 0; i < btn.length; i++) {
         btn[i].addEventListener("click", function() {
         var current = document.getElementsByClassName("active");
         current[0].className = current[0].className.replace(" active", "");
         this.className += " active";
         });
-      }
+      } */
 
 
