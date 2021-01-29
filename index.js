@@ -6,6 +6,10 @@ const departmemtOption = document.getElementById("departmentOption");
 const questionsContainer = document.getElementById("questionsContainer");
 const questions = document.getElementsByClassName('question')
 const btnContainer = document.getElementById("buttonContainer");
+const submitBtn = document.getElementById("submitBtn");
+const form = document.getElementById("form");
+const warningMessage = document.getElementsByClassName("warningMessage");
+console.log(warningMessage)
 //const btn = document.querySelectorAll('button');
 
 var questObj = {
@@ -34,10 +38,17 @@ const noBtn4 = document.getElementById("noBtn4");
 
 
 
+
 console.log(questions);
 console.log(questionsContainer);   
 
 // FULL NAME FUNCTION //
+
+    const nameFocus = () => {
+        employeeName.focus();
+    }
+
+    nameFocus();
 
     const employeeNameFunction = (e) => {
         if(e.target){
@@ -78,15 +89,15 @@ var questObjArray = [questObj.question1,questObj.question2,questObj.question3,qu
     // anonymous function
     (function(i){
         buttonContainterArr[i].addEventListener('click', (e) => { 
+            btnNoArray[i].style.backgroundColor  = '#fff';
+            btnYesArray[i].style.backgroundColor = "#fff"; 
             // clean up and clear values before click
-           if(e.target.value === "YES" ){
-                // value isn't changing, figure out why ???
-                btnYesArray[i].style.backgroundColor = "yellow"; 
-                btnNoArray[i].disabled = true;
+           if(e.target.innerText === "YES" ){
+                btnYesArray[i].style.backgroundColor = "gray"; 
                 questObjArray[i] = true;
            }else{ 
-               btnNoArray[i].style.backgroundColor = "red";  
-               btnYesArray[i].disabled = true;  
+               btnNoArray[i].style.backgroundColor = "gray";  
+               //btnYesArray[i].disabled = true;  
                questObjArray[i] = false;     
            } 
 
@@ -95,6 +106,19 @@ var questObjArray = [questObj.question1,questObj.question2,questObj.question3,qu
 
     }(i));// holds the increment value so it is inscync with browser
        
+} 
+
+
+form.addEventListener('click', (e) => {
+    if(employeeName.value.length < 4){
+        e.preventDefault();
+        employeeName.style.borderBottom = "3px solid red";
     } 
-
-
+    if(employeeCode.value == ''){
+        e.preventDefault();
+        employeeCode.style.borderBottom = "3px solid red"
+    }
+    if(yesBtn1.value == ''){
+        yesBtn1.style.backgroundColor = "red";
+    }
+})

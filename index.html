@@ -30,57 +30,59 @@
             </div>
         </div>
         <div id="questionsContainer">
-            <div class="question question1">
-                <h1>PLEASE READ EACH QUESTION CAREFULLY</h1>
-                <h3>Have you experienced any of the following symptoms in the past 48 hours:</h3>
-                    <li>fever or chills</li>
-                    <li>cough</li>
-                    <li>shortness of breath or difficulty breathing</li>
-                    <li>fatigue</li>
-                    <li>muscle or body aches</li>
-                    <li>headache</li>
-                    <li>new loss of taste or smell</li>
-                    <li>sore throat</li>
-                    <li>congestion or runny nose</li>
-                    <li>nausea or vomiting</li>
-                    <li>diarrhea</li>
-                <div id="buttonContainer">
-                    <button class="yesBtn active">YES</button>
-                    <button class="noBtn">NO</button>
+            <form id="form">
+                <div class="question question1">
+                    <h1>PLEASE READ EACH QUESTION CAREFULLY</h1>
+                    <h3 class="warningMessage">Have you experienced any of the following symptoms in the past 48 hours:</h3>
+                        <li>fever or chills</li>
+                        <li>cough</li>
+                        <li>shortness of breath or difficulty breathing</li>
+                        <li>fatigue</li>
+                        <li>muscle or body aches</li>
+                        <li>headache</li>
+                        <li>new loss of taste or smell</li>
+                        <li>sore throat</li>
+                        <li>congestion or runny nose</li>
+                        <li>nausea or vomiting</li>
+                        <li>diarrhea</li>
+                    <div id="buttonContainer1">
+                        <button id="yesBtn1" class="yesBtn active">YES</button>
+                        <button id="noBtn1" class="noBtn">NO</button>
+                    </div>
                 </div>
-            </div>
-            <div class="question question2">
-                <h3>Within the past 14 days, have you been in close physical contact  (6 feet or closer for a
-                    cumulative total of 15 minutes) with:</h3>
-                    <ul>
-                        <li>Anyone who is known to have laboratory-confirmed COVID-19?</li>
-                        <li>Anyone who has any symptoms consistent with COVID-19?</li>
-                    </ul>
-                <div id="buttonContainer">
-                    <button class="yesBtn">YES</button>
-                    <button class="noBtn">NO</button>
+                <div class="question question2">
+                    <h3 class="warningMessage">Within the past 14 days, have you been in close physical contact  (6 feet or closer for a
+                        cumulative total of 15 minutes) with:</h3>
+                        <ul>
+                            <li>Anyone who is known to have laboratory-confirmed COVID-19?</li>
+                            <li>Anyone who has any symptoms consistent with COVID-19?</li>
+                        </ul>
+                    <div id="buttonContainer2">
+                        <button id="yesBtn2" class="yesBtn">YES</button>
+                        <button id="noBtn2" class="noBtn">NO</button>
+                    </div>
                 </div>
-            </div>
-            <div class="question question3">
-                <h3>Are you isolating or quarantining because you may have been exposed to a person with
-                    COVID-19 or are worried that you may be sick with COVID-19?</h3>
-                <div id="buttonContainer">
-                    <button class="yesBtn">YES</button>
-                    <button class="noBtn">NO</button>
+                <div class="question question3">
+                    <h3 class="warningMessage">Are you isolating or quarantining because you may have been exposed to a person with
+                        COVID-19 or are worried that you may be sick with COVID-19?</h3>
+                    <div id="buttonContainer3">
+                        <button id="yesBtn3" class="yesBtn">YES</button>
+                        <button id="noBtn3" class="noBtn">NO</button>
+                    </div>
                 </div>
-            </div>
-            <div class="question question4">
-                <h3>Are you currently waiting on the results of a COVID-19 test?</h3>
-                <div id="buttonContainer">
-                    <button class="yesBtn">YES</button>
-                    <button class="noBtn">NO</button>
+                <div class="question question4">
+                    <h3 class="warningMessage">Are you currently waiting on the results of a COVID-19 test?</h3>
+                    <div id="buttonContainer4">
+                        <button id="yesBtn4" class="yesBtn">YES</button>
+                        <button id="noBtn4" class="noBtn">NO</button>
+                    </div>
                 </div>
-            </div>
-            <div id="submitBtnContainer">
-                <button id="submitBtn">Submit</button>
+                <div id="submitBtnContainer">
+                    <button id="submitBtn">Submit</button>
+                </div>
             </div>
         </div>
-    </div>
+            </form>
     <script src="index.js"></script>
 </body>
 </html>
